@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.magazine-viewer {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.magazine-viewer iframe {
+    border-radius: 10px;
+    min-height: 600px;
+}
+
+.download-section {
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.download-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .magazine-viewer {
+        padding: 10px;
+    }
+}
